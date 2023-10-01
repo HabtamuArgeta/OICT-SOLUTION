@@ -7,9 +7,6 @@
     <script src="https://kit.fontawesome.com/b1ff1b393b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./w3.css">
     <link rel="stylesheet" href="./style.css">
-    <style>
-      .animate-right{animation-duration: 1s;animation-name: anim-right;}@keyframes anim-right{from{opacity: 0;right: -300px;}to{opacity: 1;right: 0px;}}
-    </style>
 </head>
 <body>
    <a  href="#goToTop" class="w3-hover-blue w3-xlarge w3-white " style="position: fixed;right: 10px;bottom: 20px;padding-left: 8px;padding-right: 8px;z-index: 5;"><i class="fas fa-arrow-up"></i></a>
@@ -265,7 +262,7 @@
   </div>
  </div>
 </div>
- <div class="w3-center w3-cell-row" >
+ <div class="w3-center" >
   <span class=" w3-badge badges" style="margin-right: 20px;background-color: lightgrey;color: lightgray;">.</span>
   <span class=" w3-badge badges" style="margin-right: 20px;background-color: lightgrey;color: lightgray;">.</span>
   <span class=" w3-badge badges" style="margin-right: 20px;background-color: lightgrey;color: lightgray;">.</span>
@@ -282,77 +279,51 @@
   </div>
  </div>
  
-  <div class="w3-row-padding">
- <a  href="https://youtu.be/ygfaE_3ICBo?list=PLZPGpTvnFbkSLSU45w-45QRxUwxUgH7Vt" target="_blank">
-    <canvas class="w3-col " id="myCanvas" width="46" height="40" style="border:1px solid grey;border-radius:50%;background-color:blue;margin-top: 10px;margin-left: 50%;width: 46px;"></canvas>
-  </a>
-  <span class="w3-col l4 m4 s4 " style="margin-left: 1%;margin-top: 17px;">VIDEO SHOWCASE</span>
+  <div class="w3-row-padding ">
+    <a  href="https://youtu.be/ygfaE_3ICBo?list=PLZPGpTvnFbkSLSU45w-45QRxUwxUgH7Vt" target="_blank">
+       <canvas class="w3-col" id="myCanvas" width="46" height="40" style="border:1px solid grey;border-radius:50%;background-color:blue;margin-top: 10px;margin-left: 50%;width: 46px;"></canvas>
+     </a>
+     <span class="w3-col l4 m4 s4 " style="margin-left: 1%;margin-top: 17px;">VIDEO SHOWCASE</span>
   </div>
 
-  <script>
-    let elem = document.getElementsByClassName('homeImg');
-    let nomOfPhote = 0;
-    showHidden(nomOfPhote);
+  <div  style="margin-top: 50px;background-image:linear-gradient(to right ,rgb(123, 120, 120) ,rgb(248, 245, 245));padding-top: 100px;padding-bottom: 100px;">
+    <div class="w3-center">
+        <div style="color: rgb(57, 96, 249);">// OUR SERVICE</div>
+        <h1 class="w3-text-white"><b>We Offer a Wide<br>Variety of IT Services</b></h1>
+    </div>
 
-    function showHidden(){
-      for(let i=0;i<elem.length;i++){
-        elem[i].style.display = "none";
-      } 
-      
-      if(nomOfPhote>=3){nomOfPhote = 0;}
-       nomOfPhote++;
-       elem[nomOfPhote-1].style.display = "block";
-       
-    }
-     setInterval(showHidden,13000);
-    function chenge(num){
-      nomOfPhote = nomOfPhote + num -1 ;
-      if(nomOfPhote >= 3){nomOfPhote = 0;}
-     else if(nomOfPhote < 0){nomOfPhote = 2;}
+    <div class="w3-row-padding w3-text-white row-grid-1" style="margin-top: 30px;">
+      <div  class="w3-col move-up-on-hover" style="background-color: rgb(43, 37, 118);padding: 30px;width: 29.5%;padding-bottom: 50px;opacity: 0.9;margin-left: 3%;margin-right: 2.7%;">
+        <h2><b>Custom Software Development</b></h2>
+        <div style="color: rgb(212, 216, 219);">We help businesses elevate their value through custom software development, product design, QA and consultancy.</div><br>
+         <a href="#" style="background-color: rgb(19, 15, 44);margin-bottom: 30px;color: rgb(25, 224, 239);">//ECOMMERCE SOLUTIONS</a>
+         <div class="add-forward-slash" style="margin-top: 20px;"> <a  href="#">GAMIFICATION SOFTWARE</a> </div>
+         <div class="add-forward-slash" style="margin-top: 20px;"> <a  href="#">CLIENT MOBILE APPS</a> </div>
+         <canvas id="myCanvas1" width="200" height="100" style="position: absolute;top: -11px;right: -23px;">Your browser does not support the HTML canvas tag.</canvas>  
+         <i class="fas fa-desktop w3-xlarge" style="position: absolute;top: 18px;right: 23px;"></i>       
+      </div>
+      <div class="w3-col move-up-on-hover" style="background-color: rgb(43, 37, 118);padding: 30px;width: 29.5%;padding-bottom: 50px;opacity: 0.9;margin-right: 2.7%;">
+        <h2><b>Outsoursing Development</b></h2>
+        <div style="color: rgb(212, 216, 219);">We help businesses elevate their value through custom software development, product design, QA and consultancy.</div><br>
+        <div class="add-forward-slash" style="margin-bottom: 20px;"><a href="#" >DEVELOPMENT PROCESS</a></div>
+        <a style="background-color: rgb(19, 15, 44);margin-top: 30px;color: rgb(25, 224, 239);"  href="#">//CHANGE MANAGEMENT</a>
+         <div class="add-forward-slash" style="margin-top: 20px;"> <a  href="#">APPLICATION SUPPORT</a> </div>
+         <canvas id="myCanvas2" width="200" height="100" style="position: absolute;top: -11px;right: -23px;">Your browser does not support the HTML canvas tag.</canvas>  
+         <i class="	fas fa-poll w3-xlarge" style="position: absolute;top: 18px;right: 23px;"></i>       
+      </div>
+      <div class="w3-col move-up-on-hover" style="background-color: rgb(43, 37, 118);padding: 30px;width: 29.5%;padding-bottom: 50px;opacity: 0.9;">
+        <h2><b>Software Product Developmentt</b></h2>
+        <div style="color: rgb(212, 216, 219);">We help businesses elevate their value through custom software development, product design, QA and consultancy.</div><br>
+         <div class="add-forward-slash" style="margin-bottom: 20px;"> <a  href="#">DESKTOP APPLICATIONS</a> </div>
+         <div class="add-forward-slash" style="margin-bottom: 20px;"> <a  href="#">SOFTWARE-AS-A-SERVICE</a> </div>
+         <a href="#" style="background-color: rgb(19, 15, 44);color: rgb(25, 224, 239);">//MOBILE APPS</a>
+         <canvas id="myCanvas3" width="200" height="100" style="position: absolute;top: -11px;right: -23px;">Your browser does not support the HTML canvas tag.</canvas> 
+         <i class="	fas fa-file-code w3-xlarge" style="position: absolute;top: 18px;right: 23px;"></i>        
+      </div>
+    </div>
 
-       showHidden(nomOfPhote);
-       
-     }
+ </div>
 
-     let elem1 = document.getElementsByClassName('HiddenSlide');
-     let badges = document.getElementsByClassName('badges');
-    let nomOfslide = 0;
-    showHiddenSlide(nomOfslide);
-
-     function showHiddenSlide(){
-      for(let i=0;i<elem1.length;i++){
-        elem1[i].style.display = "none";
-        badges[i].className =  badges[i].className.replace(" w3-green","");
-      } 
-      elem1[nomOfslide].style.display = "block";
-      badges[nomOfslide].className += " w3-green";
-      nomOfslide++;
-      if(nomOfslide>=4){nomOfslide = 0;}   
-    }
-    setInterval(showHiddenSlide,10000);
-
-  const canvas = document.getElementById("myCanvas");
-  const ctx = canvas.getContext("2d");
-
-// Define a new path:
-ctx.beginPath();
-
-// Define a start point
-ctx.moveTo(16,11);
-
-// Define points
-ctx.lineTo(34,22);
-ctx.lineTo(16,32);
-ctx.lineTo(16,11);
-ctx.fillStyle = "white ";
-ctx.fill()
-
-
-
-
-// Draw it
-ctx.stroke();
-
-  </script>
+ <script src="./jes1.js"></script>
 </body>
 </html>
