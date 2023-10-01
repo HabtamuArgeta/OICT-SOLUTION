@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(C:\wamp64\www\oictsolutions/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xMKTU1Kvnz.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+    .topNavBar a{
+      text-decoration: none;
+    }
+    
+    .topNavBar a:hover{
+        color: rgb(241, 68, 97);
+      }
+    #line1,#line2,#line3,#line4,#line5,#line6{display: none;transition: display 0.5s ease;transition-delay: 0.5s;}
+    #hovarable1:hover + #line1,#hovarable2:hover + #line2,#hovarable3:hover + #line3,#hovarable4:hover + #line4,#hovarable5:hover + #line5,#hovarable6:hover + #line6{display: block;}
+    .w3-dropdown-content a:hover::before{content: "//";transition-property: all;}
+
+      
