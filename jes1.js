@@ -39,6 +39,26 @@ let elem = document.getElementsByClassName('homeImg');
     }
     setInterval(showHiddenSlide,10000);
 
+    let elem01 = document.getElementsByClassName('hiddin01');
+  let num = elem01.length; 
+  let min = 0;let max = 5;
+  showHidden01();
+  function showHidden01(){
+    for (let i=0;i<=num-1;i++){
+      elem01[i].style.display = "none";
+    }
+    for (let i=min;i<=max;i++){
+      elem01[i].style.display = "block";
+    }
+    min++;
+    max ++;
+    if(max == num){max = 5;min = 0;}
+
+  }
+   
+  setInterval(showHidden01,10000);
+  
+
   const canvas = document.getElementById("myCanvas");
   const ctx = canvas.getContext("2d");
 
