@@ -59,5 +59,31 @@ let elem = document.getElementsByClassName('homeImg');
   setInterval(showHidden01,10000);
   
 
- 
+ let id001 = setInterval(countClient,10);
+ let num1 = 0;
+ function countClient(){
+  if(num1 == 330){clearInterval(id001)}
+  else{num1++;document.getElementById('client').innerText = num1 + "+";}
+ }
+
+ let id002 = setInterval(projDone,30);
+ let num2 = 0;
+ function projDone(){
+  if(num2 == 75){clearInterval(id002)}
+  else{num2++;document.getElementById('projDone').innerText = num2 + "+";}
+ }
+
+ let id003 = setInterval(projUndone,60);
+ let num3 = 0;
+ function projUndone(){
+  if(num3 == 25){clearInterval(id003)}
+  else{num3++;document.getElementById('projUndone').innerText = num3 + "+";}
+ }
+
+ let id004 = setInterval(year,100);
+ let num4 = 0;
+ function year(){
+  if(num4 == 4){clearInterval(id004)}
+  else{num4++;document.getElementById('year').innerText = num4 + "+";}
+ }
 
