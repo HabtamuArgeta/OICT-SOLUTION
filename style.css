@@ -43,5 +43,8 @@
     .tech-index-device{padding: 5%; border: 3px solid white;margin-right: 5%;margin-top: 30px;}
     .tech-index-device:hover{background-color:  rgb(57, 96, 249);}
     .tech-index-device i{color: rgb(57, 96, 249);}.tech-index-device:hover i{color: white;}
+    footer{margin-top: 100px;background-color: rgb(35, 35, 74);padding: 2%;padding-top: 100px;padding-bottom: 50px;color: white;}
+    footer a{text-decoration: none;line-height: 35px;color: rgb(157, 159, 160);}
+    footer a:hover{color: white;}
 
     
