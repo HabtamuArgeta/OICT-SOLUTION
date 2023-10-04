@@ -37,3 +37,16 @@ let elem = document.getElementsByClassName('homeImg');
    }
    
    setInterval(showHidden01,12000);
+
+   var c = document.getElementsByClassName("myCanvas");
+   for(let i = 0;i<c.length;i++){
+    var ctx1 = c[i].getContext("2d");
+    ctx1.beginPath();
+    ctx1.arc(180,180,100,Math.PI,Math.PI + Math.PI/2,false);
+    ctx1.lineTo(180,180)
+    ctx1.fillStyle = "rgb(57, 96, 249)";
+    ctx1.strokeStyle = "rgb(57, 96, 249)";
+    ctx1.fill()
+    ctx1.stroke();
+   }
+   

@@ -1,2 +1,6 @@
 .Quick-Sopport{margin-right: 6%;}.Quick-Sopport hr{height: 2px;transition: background-color 0.8s;}.Quick-Sopport:hover hr{background-color: blue;}
 .anchor-to-about-us {text-decoration: none;color: rgb(57, 96, 249);margin: 25%;}.anchor-to-about-us:hover span{margin-left:6px;}.anchor-to-about-us span{transition:margin-left 0.5s ;}
+.why-choose-us{margin-top: 90px;background-color: rgb(47, 47, 110);padding-top: 80px;color: white;padding-bottom: 60px;}
+.why-choose-us-col{width: 22%;margin-left: 2.5%;padding: 15px; padding-bottom: 100px; border: 1px solid white;position: relative;}.why-choose-us-col:hover{background-color: white;color: rgb(35, 34, 34);opacity: 1;}.why-choose-us-col > i{position: absolute;bottom: 20px;right: 20px;}
+.myCanvas{position: absolute;bottom: -21px;right: -21px;opacity: 0.4;}
+.choos-us-num{color: rgb(103, 101, 101);font-size: 7em;font-family:'Times New Roman', Times, serif; font-weight: bolder; position: absolute;top: -44px;left: -4px;z-index: 0;opacity: 0.3;}
