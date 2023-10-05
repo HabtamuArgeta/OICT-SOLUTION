@@ -9,3 +9,9 @@
 .image-container1 img{transition: transform 0.7s;}
 .image-container1:hover img{transform: scale(1.2);}
 .image-container1:hover::after{opacity: 0.6;}
+.tech-index1{ width: 100%; margin-top: 110px;background-image: url('../Images/th\ \(2\).jpeg');background-position: center; background-size:cover;opacity: 0.7;}
+.tech-index-device1{padding: 4%; border: 3px solid white;margin-right: 2.5%;margin-top: 30px;width: 14%;}
+.tech-index-device1:hover{background-color:  rgb(57, 96, 249);}
+.tech-index-device1 i{color: rgb(57, 96, 249);}.tech-index-device1:hover i{color: white;}
+.Our-avalability{width: 100%;padding-top: 140px;padding-bottom: 150px;background-image: url('../Images/OIP.jpeg');background-position: center;background-size: cover;opacity: 0.9;}
+.logo-of-client{width: 80px;height: 80px;border-radius: 50%;background-color: lightgray;}
