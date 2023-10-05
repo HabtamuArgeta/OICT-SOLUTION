@@ -30,10 +30,10 @@ let elem = document.getElementsByClassName('homeImg');
      function showHiddenSlide(){
       for(let i=0;i<elem1.length;i++){
         elem1[i].style.display = "none";
-        badges[i].className =  badges[i].className.replace(" w3-green","");
+        badges[i].className =  badges[i].className.replace(" w3-black","");
       } 
       elem1[nomOfslide].style.display = "block";
-      badges[nomOfslide].className += " w3-green";
+      badges[nomOfslide].className += " w3-black";
       nomOfslide++;
       if(nomOfslide>=4){nomOfslide = 0;}   
     }
