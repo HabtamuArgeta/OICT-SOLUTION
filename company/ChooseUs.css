@@ -1,0 +1,22 @@
+.background1{padding-top: 120px;padding-bottom: 120px;padding-left: 5%;background-image: url('../Images/OIP\ \(1\).jpeg');background-position: center;background-size: cover;}.background1 a{text-decoration: none;opacity: 0.6;margin-right: 2px;}.background1 a:hover{opacity: 1;}
+.Quick-Sopport{margin-right: 6%;}.Quick-Sopport hr{height: 2px;transition: background-color 0.8s;}.Quick-Sopport:hover hr{background-color: blue;}
+.myCanvas4{position: absolute;top: -30px;right: -123px;display: none;}
+#overlay01,#overlay02,#overlay03,#overlay04,#overlay05,#overlay06{position: relative;color: #111111;margin-left: 6%;border: 2px solid lightgray;margin-top: 30px;text-align: center;height: 300px;}
+#overlay01:hover,#overlay02:hover,#overlay03:hover,#overlay04:hover,#overlay05:hover,#overlay06:hover{color: white;}
+#overlay01:hover i,#overlay02:hover i,#overlay03:hover i,#overlay04:hover i,#overlay05:hover i,#overlay06:hover i{color: rgb(57, 96, 249);}
+#overlay01:hover .myCanvas4,#overlay02:hover .myCanvas4,#overlay03:hover .myCanvas4,#overlay04:hover .myCanvas4,#overlay05:hover .myCanvas4,#overlay06:hover .myCanvas4{display: block;z-index: 1;}
+#overlay01:hover::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/th\ \(3\).jpeg') no-repeat;background-size: cover; animation: slideOut 0.5s forwards;}
+#overlay02:hover::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/image-box1.jpg') no-repeat;background-size: cover; animation: slideOut 0.5s forwards;}
+#overlay03:hover::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/OIP\ \(1\).jpeg') no-repeat;background-size: cover; animation: slideOut 0.5s forwards;}
+#overlay04:hover::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/image-box2.jpg') no-repeat;background-size: cover; animation: slideOut 0.5s forwards;}
+#overlay05:hover::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/th\ \(2\).jpeg') no-repeat;background-size: cover; animation: slideOut 0.5s forwards;}
+#overlay06:hover::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/th\ \(1\).jpeg') no-repeat;background-size: cover; animation: slideOut 0.5s forwards;}
+#overlay01:not(:hover)::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/th\ \(3\).jpeg') no-repeat;background-size: cover; animation: slideIn 0.5s backwards;}
+#overlay02:not(:hover)::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/image-box1.jpg') no-repeat;background-size: cover; animation: slideIn 0.5s backwards;}
+#overlay03:not(:hover)::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/OIP\ \(1\).jpeg') no-repeat;background-size: cover; animation: slideIn 0.5s backwards;}
+#overlay04:not(:hover)::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/image-box2.jpg') no-repeat;background-size: cover; animation: slideIn 0.5s backwards;}
+#overlay05:not(:hover)::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/th\ \(2\).jpeg') no-repeat;background-size: cover; animation: slideIn 0.5s backwards;}
+#overlay06:not(:hover)::after{content: ""; position: absolute;top: 0;left: 0;width: 0;height: 100%; background: url('../Images/th\ \(1\).jpeg') no-repeat;background-size: cover; animation: slideIn 0.5s backwards;}
+@keyframes slideOut {0% {width: 0%; } 10% {width:10%;}20% {width: 20%; } 30% {width:30%;}40% {width: 40%; } 50% {width:50%;}60% {width: 60%; } 70% {width:70%;}80% {width: 80%; } 90% {width:90%;}100% {width: 100%; }}
+@keyframes slideIn {100% {width: 0%; } 90% {width:10%;}80% {width: 20%; } 70% {width:30%;}60% {width: 40%; } 50% {width:50%;}40% {width: 60%; } 30% {width:70%;}20% {width: 80%; } 10% {width:90%;}0% {width: 100%; }}
+.content{position: relative; margin: 5%;z-index: 1;}
