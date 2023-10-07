@@ -38,3 +38,25 @@ ctx4.strokeStyle = "rgb(109, 135, 243)";
 ctx4.fill()
 ctx4.stroke();
 }
+let elem02 = document.getElementsByClassName('image-container1');
+   let badges = document.getElementsByClassName('badges')
+   let num = elem02.length; let j=0;
+   showHidden02();
+   function showHidden02(){
+    for(let i =0;i<badges.length;i++){
+      badges[i].className =  badges[i].className.replace(" w3-black","");
+    }
+    let firstElem = elem02[0].innerHTML;
+    for(let i=0;i<num;i++){
+      if(i==num-1){
+        elem02[i].innerHTML = firstElem;
+        break;
+      }
+      elem02[i].innerHTML = elem02[i+1].innerHTML;  
+    } 
+    badges[j].className += ' w3-black'; 
+    j++;
+    if(j == badges.length){j = 0;}
+   }
+   
+   setInterval(showHidden02,5000);
