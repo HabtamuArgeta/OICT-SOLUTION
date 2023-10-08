@@ -1,0 +1,5 @@
+.background1{padding-top: 120px;padding-bottom: 120px;padding-left: 5%;background-image: url('../Images/OIP\ \(1\).jpeg');background-position: center;background-size: cover;}.background1 a{text-decoration: none;opacity: 0.6;margin-right: 2px;}.background1 a:hover{opacity: 1;}
+.row01{padding: 1.5%;}.col1 :nth-child(1){color: rgb(57, 96, 249);}.col1 :nth-child(2){font-size: 2em;font-weight: bolder;}
+.col1 :nth-child(3),.col1 :nth-child(5),.row02,.list01 li,.row03{color: rgb(99, 96, 96);line-height: 27px;}.col1 :nth-child(4),.row03 a{color: rgb(67, 92, 190);margin-top: 17px;margin-bottom: 17px;text-decoration: none;}.col1 :nth-child(4):hover,.row03 a:hover{color: blue;}
+.row02 img{float: left; margin-right: 1%;}
+.row03 div{margin-top: 12px;margin-bottom: 13px;}.row03 :nth-child(4){margin-top: 20px;margin-bottom: 20px;}
