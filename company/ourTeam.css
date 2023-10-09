@@ -1,0 +1,10 @@
+.teamPhoto{margin-top: 100px;margin-bottom: 100px;width: 100%;}
+.background1{padding-top: 120px;padding-bottom: 120px;padding-left: 5%;background-image: url('../Images/OIP\ \(1\).jpeg');background-position: center;background-size: cover;}.background1 a{text-decoration: none;opacity: 0.6;margin-right: 2px;}.background1 a:hover{opacity: 1;}
+.team-mates{padding-top: 70px;}
+.founders{margin-top: 100px;margin-bottom: 100px;}.founders > div:nth-child(1){color: rgb(57, 96, 249);}.founders > div:nth-child(2){margin-top: 5px;margin-bottom: 15px;font-size: 2em;font-weight: bolder;}.founders > div:nth-child(3){width: 60%;color: rgb(56, 54, 54);margin-left: 20%;}
+.row03{margin-top: 30px;}.row03 > .w3-col :nth-child(2){font-size: larger;font-weight: bolder;}.row03 > .w3-col :nth-child(3){opacity: 0.7;}
+.row03 >.w3-col{background-color: lightgray;padding-bottom: 20px;position: relative;}.row03 >.w3-col:hover{background-color: white;} 
+.contact-of-founders{position: absolute;top: 27%;right: 0%;background-color: rgb(38, 38, 141);display: none;}.contact-of-founders a{text-decoration: none;display: block;padding: 7px; padding-left: 20px;padding-right: 20px;}.row03 >.w3-col:hover .contact-of-founders{display: block; animation: ShowContact 2s ease;} @keyframes ShowContact{0%{top: 27%;right: -2%;}50%{top: 27%;right: 0;}100%{top: 27%;right: -0.1%;}}
+.tech-index{margin-top: -50px;margin-left: 1%;margin-bottom: 30px;width: 98%;padding-top: 80px;padding-bottom: 50px;}
+.Our-avalability{width: 100%;padding-top: 140px;padding-bottom: 150px;background-image: url('../Images/OIP.jpeg');background-position: center;background-size: cover;opacity: 0.9;}
+.logo-of-client{width: 80px;height: 80px;border-radius: 50%;background-color: lightgray;}
