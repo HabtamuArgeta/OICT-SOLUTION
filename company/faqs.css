@@ -5,3 +5,6 @@
 .col01 a{width: 100%;color: rgb(25, 24, 24);text-decoration: none;background-color: rgb(245, 239, 239);display: block;cursor: pointer;margin-bottom: 10px;margin-top: 10px;padding-top: 13px;padding-bottom: 13px;padding-left: 2%;}.col01 a:hover{color: blue;}.col01 a i{float: right;margin-right: 2%;}
 .animate-bottom{position: relative; animation: animateBottom 2s ease;} @keyframes animateBottom{from{top: 200px;left: 0;opacity: 0;}to{top: 0;left: 0;opacity: 1;}}
 .up1,.up2{display: none;}
+.tech-index{margin-top: 90px;margin-left: 1%;margin-bottom: 30px;width: 98%;padding-top: 80px;padding-bottom: 50px; background-image: linear-gradient(to right,rgb(114, 144, 244),rgb(4, 4, 215));}
+.row03{margin-top: 89px;text-align: center;}.row03 > div:nth-child(1){color:rgb(57, 96, 249) }.row03 > div:nth-child(2){font-size: 2.3em;font-weight: bolder;}
+.row04col{position: relative;margin-left: 5%;margin-top: 60px;}.row04col div:nth-child(2){position: absolute;top: 180px;left: 9%;color: white;font-size: 1.7em;font-weight: bold;}
