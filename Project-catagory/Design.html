@@ -4,59 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design&#8211; OICT Solutions</title>
+    <script src="../Home/js-for-side-bar.js"></script>
     <script src="https://kit.fontawesome.com/b1ff1b393b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Home/w3.css">
     <link rel="stylesheet" href="../Home/style.css">
     <link rel="stylesheet" href="../Project/CssForProject/project.css">
 </head>
 <body>
-    <a  href="#goToTop" class="w3-hover-blue w3-xlarge w3-white " style="position: fixed;right: 10px;bottom: 20px;padding-left: 8px;padding-right: 8px;z-index: 5;"><i class="fas fa-arrow-up"></i></a>
+  <a  href="#goToTop" class="w3-hover-blue w3-xlarge w3-white " style="position: fixed;right: 10px;bottom: 20px;padding-left: 8px;padding-right: 8px;z-index: 5;"><i class="fas fa-arrow-up"></i></a>
    <a id="goToTop"></a>
-  <header class="w3-bar w3-top" style="width: 100%; background-color: rgb(241, 68, 97);">
+   <!--Here is code for side bar -->
+   <div class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left" style="display: none;z-index: 10;" id="sidebar01">
+    <span class=" w3-button w3-right  w3-xlarge w3-animate-fading" onclick="closeSbar()" title="Close sidebar" style="color: #E94B3C;">&times;</span>
+    <input class="w3-bar-item w3-input w3-border w3-border-black" type="text" placeholder="Search here..." id="search01" style="margin: 2px;" onkeyup="filterMe()">
+    <a href="../Home/home.html" class="w3-bar-item w3-button w3-large active1"  onclick="makeMeActive(event)">Home</a>
+    <button  class="w3-bar-item w3-button w3-large active" onclick="showHiddenOySideBr(event,'CompanyDetail')">Company</button>
+     <div  style="display: none;" id="CompanyDetail">
+      <a href="../company/AboutUs.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">About us</a>   
+      <a href="../company/choose Us.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">Why Choose us</a>
+      <a href="../company/About CEO.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">About COE</a>  
+      <a href="../company/OurTeam.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">Out team</a>
+      <a href="../company/FAQ.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">FAQs</a>  
+    </div>
+    <button class="w3-bar-item w3-button w3-large active" onclick="showHiddenOySideBr(event,'ServiceDetail')">services</button>
+    <div  style="display: none;" id="ServiceDetail">
+      <a href="../Service/IT service.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">IT Services</a>
+      <a href="../Service/Mob development.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">Mob Development</a>
+      <a href="../Service/Web development.html" class="w3-bar-item w3-button w3-margin-left active1"  onclick="makeMeActive(event)">Web Development</a>        
+    </div>
+    <a href="../Project/HtmlFoProject/project.html" class="w3-bar-item w3-button w3-large active1"  onclick="makeMeActive(event)">Project</a>
+    <a href="https://oictsolutions.com/blog/" class="w3-bar-item w3-button w3-large active1"   onclick="makeMeActive(event)">Blog</a>
+    <a href="../Contact.html" class="w3-bar-item w3-button w3-large active1"   onclick="makeMeActive(event)">Contacts</a>
+ </div>
+ <!--Here is code to difene overlay-->
+ <div class="w3-overlay w3-animate-opacity" onclick="closeSbar()" style="cursor:pointer" id="overlaybody"></div>
+ 
+   <!--On desktop device-->
+  <header class="w3-bar w3-top w3-hide-small w3-hide-medium" style="width: 100%; background-color: rgb(241, 68, 97);">
     <a class="w3-bar-item w3-border-left w3-border-right"href="https://www.twitter.com/oictsolutions/" target="_blank" style="width: 4%;margin-left: 3%;"><i class="fab fa-twitter"></i></a>
     <a class="w3-bar-item w3-border-right" href="https://www.facebook.com/oict.solutions/" target="_blank" style="width: 4%;"><i class="fab fa-facebook-f"></i></a>
     <a class="w3-bar-item w3-border-right" href="https://www.linkedin.com/company/oictsolutions/" target="_blank" style="width: 4%;"><i class="fab fa-linkedin-in"></i></a>
     <a class="w3-bar-item w3-border-right" href="https://www.instagram.com/oict.solutions/" target="_blank" style="width: 4%;"><i class="fab fa-instagram"></i></a>
-    <a class="w3-bar-item w3-border-left w3-border-right" href="tel:+1-800-456-478-23" style="width: 15%;margin-left: 30%;"><i aria-hidden="true" class="fas fa-phone-alt"></i><span class="w3-medium" style="margin-left: 10px;">+251903439943</span></a>
-    <a class="w3-bar-item  w3-border-right" href="mailto:info@oictsolutions.com" style="width: 20%;"><i aria-hidden="true" class="fas fa-envelope"></i><span class="w3-medium" style="margin-left: 10px;">info@oictsolutions.com</span></a>
-  </header> 
+    <a class="w3-bar-item w3-border-left w3-border-right" href="tel:+1-800-456-478-23" style="width: 25%;margin-left: 30%;"><i aria-hidden="true" class="fas fa-phone-alt "></i><span class="w3-medium " style="margin-left: 10px;">+251903439943</span></a>
+    <a class="w3-bar-item  w3-border-right" href="mailto:info@oictsolutions.com" style="width: 25%;"><i aria-hidden="true" class="fas fa-envelope "></i><span class="w3-medium " style="margin-left: 10px;">info@oictsolutions.com</span></a>
+  </header>
+  <!--On tablets-->
+  <header class="w3-bar w3-top w3-hide-small w3-hide-large" style="width: 100%; background-color: rgb(241, 68, 97);">
+    <a class="w3-bar-item w3-border-left w3-border-right"href="https://www.twitter.com/oictsolutions/" target="_blank" style="width: 4%;"><i class="fab fa-twitter"></i></a>
+    <a class="w3-bar-item w3-border-right" href="https://www.facebook.com/oict.solutions/" target="_blank" style="width: 4%;"><i class="fab fa-facebook-f"></i></a>
+    <a class="w3-bar-item w3-border-right" href="https://www.linkedin.com/company/oictsolutions/" target="_blank" style="width: 4%;"><i class="fab fa-linkedin-in"></i></a>
+    <a class="w3-bar-item w3-border-right" href="https://www.instagram.com/oict.solutions/" target="_blank" style="width: 4%;"><i class="fab fa-instagram"></i></a>
+    <a class="w3-bar-item  w3-border-right" href="tel:+1-800-456-478-23" style="width: 28%;margin-left: 4%;"><span class="w3-medium " style="margin-left: 10px;">+251903439943</span></a>
+    <a class="w3-bar-item  w3-border-right" href="mailto:info@oictsolutions.com" style="width: 35%;"><span class="w3-medium " style="margin-left: 10px;">info@oictsolutions.com</span></a>
+    <a class="w3-bar-item w3-button  w3-hide-large w3-xlarge w3-right" style="padding-top: 0;" onclick="openSbar()">&#9776;</a>
+  </header>
+  <!--On smart phone-->
+  <header class="w3-bar w3-top w3-hide-large w3-hide-medium" style="width: 100%; background-color: rgb(241, 68, 97);">
+     <a class="w3-bar-item w3-border-left w3-border-right" href="tel:+1-800-456-478-23" style="width: 45%;margin-left: 4%;"><i class="fas fa-phone-alt"></i><span class="w3-medium" style="margin-left: 10px;">+251903439943</span></a>
+     <a class="w3-bar-item w3-button  w3-hide-large w3-xlarge w3-right" style="margin-top: 0;" onclick="openSbar()">&#9776;</a>
+  </header>
+
   <section  class="" style="background-color: rgb(255, 250, 183);margin-top: 42px;">
-   <div class="w3-row-padding">
-     <div class="w3-col l2 m3 s4 " style="margin-left: 3%;">
-        <a href="../index.html"><img src="../Images/oict.png" style="width: 100%;" alt="OCIT solution"></a>
-      </div>
-      <div class="w3-col l7 m8 s12 topNavBar" style="margin-left: 17%;margin-top: 30px;">
-        <div class="hovarable w3-row" style="width: 100%;font-weight: bold;font-family:'Roboto'">
-        <a class="w3-col l1 m1"  href="../Home/home.html" style="padding-bottom: 40px;">HOME</a>
-        <div class="w3-dropdown-hover w3-col l2 m2 w3-center">
-          <a  style="padding-bottom: 60px;"  href="#">COMPANY &#9662;</a>
-          <div class="w3-card-4 w3-dropdown-content w3-bar-block" style="padding-left: 20px;padding-right: 40px;margin-top: 50px;">
-              <a class="w3-bar-item" href="../company/AboutUs.html">ABOUT US</a>
-              <a class="w3-bar-item" href="../company/choose Us.html">WHY CHOOS US</a>
-              <a class="w3-bar-item" href="../company/About CEO.html">ABOUT CEO/FOUNDER</a>
-              <a class="w3-bar-item" href="../company/OurTeam.html">OUR TEAM</a>
-              <a class="w3-bar-item" href="../company/FAQ.html">FAQS</a>
+    <div class="w3-row-padding">
+      <!--On desktop device-->
+      <div class="w3-col l2 m3 s4 w3-hide-medium w3-hide-small" style="margin-left: 3%;">
+         <a href="../index.html"><img src="../Images/oict.png" style="width: 100%;" alt="OCIT solution"></a>
+       </div>
+       <div class="w3-col l7 m8 s12 topNavBar w3-hide-small w3-hide-medium" style="margin-left: 17%;margin-top: 30px;">
+         <div class="hovarable w3-row" style="width: 100%;font-weight: bold;font-family:'Roboto'">
+         <a class="w3-col l1 m1"  href="./Home/home.html" style="padding-bottom: 40px;">HOME</a>
+         <div class="w3-dropdown-hover w3-col l2 m2 w3-center">
+           <a  style="padding-bottom: 60px;"  href="#">COMPANY &#9662;</a>
+           <div class="w3-card-4 w3-dropdown-content w3-bar-block" style="padding-left: 20px;padding-right: 40px;margin-top: 50px;">
+               <a  class="w3-bar-item" href="../company/AboutUs.html">ABOUT US</a>
+               <a class="w3-bar-item" href="../company/choose Us.html">WHY CHOOS US</a>
+               <a class="w3-bar-item" href="../company/About CEO.html">ABOUT CEO/FOUNDER</a>
+               <a class="w3-bar-item" href="../company/OurTeam.html">OUR TEAM</a>
+               <a class="w3-bar-item" href="../company/FAQ.html">FAQS</a>
+           </div>
+         </div>
+         <div class="w3-dropdown-hover w3-col l2 m2 w3-center">
+             <a  style="padding-bottom: 60px;"  href="#">SERVICES &#9662;</a>
+             <div class="w3-card-4 w3-dropdown-content w3-bar-block" style="padding-left: 20px;padding-right: 40px;margin-top: 50px;">
+               <a class="w3-bar-item" href="../Service/IT service.html">IT SERVICES</a>
+               <a class="w3-bar-item" href="../Service/Web development.html">WEB DEVELOPMENT</a>
+               <a class="w3-bar-item" href="../Service/Mob development.html">MOBILE DEVELOPMENT</a>
+             </div>
+             </div>
+             <a class="w3-col l2 m2 w3-center"  href="../Project/HtmlFoProject/project.html" style="padding-bottom: 40px;">PROJECTS</a>
+             <a class="w3-col l1 m1"  href="https://oictsolutions.com/blog/" style="padding-bottom: 40px;">BLOG</a>
+             <a class="w3-col l2 m2 w3-center"  href="../Contact.html" style="padding-bottom: 40px;">CONTACT</a>
+             <span class="w3-col l1 m1" ><i class="fa fa-search"></i></span>
           </div>
         </div>
-        <div class="w3-dropdown-hover w3-col l2 m2 w3-center">
-            <a  style="padding-bottom: 60px;"  href="#">SERVICES &#9662;</a>
-            <div class="w3-card-4 w3-dropdown-content w3-bar-block" style="padding-left: 20px;padding-right: 40px;margin-top: 50px;">
-              <a class="w3-bar-item" href="../Service/IT service.html">IT SERVICES</a>
-              <a class="w3-bar-item" href="../Service/Web development.html">WEB DEVELOPMENT</a>
-              <a class="w3-bar-item" href="../Service/Mob development.html">MOBILE DEVELOPMENT</a>
-            </div>
-            </div>
-            <a class="w3-col l2 m2 w3-center"  href="../Project/HtmlFoProject/project.html" style="padding-bottom: 40px;">PROJECTS</a>
-            <a class="w3-col l1 m1"  href="https://oictsolutions.com/blog/" style="padding-bottom: 40px;">BLOG</a>
-            <a class="w3-col l2 m2 w3-center"  href="../Contact.html" style="padding-bottom: 40px;">CONTACT</a>
-            <span class="w3-col l1 m1" ><i class="fa fa-search"></i></span>
-            <span class="w3-col l1 m1" ><i class="fa fa-windows"></i></span>
-         </div>
-       </div>
-    </div>
-    <div class="w3-border-bottom w3-border-blue-gray w3-margin-top"></div>
-    <div style="padding-bottom: 100px;"></div>  
-  </section>
+          <!--On tablets-->
+          <div class="w3-col m2 s4 w3-hide-large" style="margin-left: 0%;">
+            <a href="../index.html"><img src="../Images/oict.png" style="width: 100%;" alt="OCIT solution"></a>
+          </div>
+     </div>
+     <div class="w3-border-bottom w3-border-blue-gray w3-margin-top"></div>
+     <div style="padding-bottom: 100px;"></div>  
+   </section>
 
   <div class="background1 w3-text-white">
     <div class="w3-xxxlarge"><b>Catagories:Design </b></div>

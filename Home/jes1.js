@@ -105,4 +105,3 @@ let elem = document.getElementsByClassName('homeImg');
   }
 
  }
-
