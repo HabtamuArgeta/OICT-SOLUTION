@@ -10,3 +10,4 @@
 .Our-avalability{width: 100%;padding-top: 140px;padding-bottom: 150px;background-image: url('../Images/OIP.jpeg');background-position: center;background-size: cover;opacity: 0.9;}
 .logo-of-client{width: 80px;height: 80px;border-radius: 50%;background-color: lightgray;}
 .Our-avalability > div:nth-child(1){color: rgb(57, 96, 249);text-align: center;}.Our-avalability > h1:nth-child(2){text-align: center;}.Our-avalability > div:nth-child(3) > div:nth-child(1),.Our-avalability > div:nth-child(3) > div:nth-child(2){margin-left: 4%;background-color: rgb(241, 239, 233);padding-bottom: 50px;}
+@media(min-width:601px) and (max-width:992px){.row3-col2{padding-top: 200px;padding-bottom: 200px;}.row4 a{color: black;background-color: aliceblue;margin-right: 1%;border-radius: 3px;width: 32.3%;font-size: smaller;}.row3 > div:first-child{padding: 1%;padding-left: 2%;}}

@@ -12,3 +12,4 @@
 .row5{margin-top: 100px;padding-top: 100px;padding-bottom: 60px;background-color: rgb(234, 229, 229);}
 .row6{margin-top: 100px;}.row6 > div:nth-child(1){color: rgb(57, 96, 249);text-align: center;}.row6 > div:nth-child(2){text-align: center;font-size: 2.5em;font-weight: bolder;}
 .Our-avalability > div:nth-child(1){color: rgb(57, 96, 249);text-align: center;}.Our-avalability > h1:nth-child(2){text-align: center;}.Our-avalability > div:nth-child(3) > div:nth-child(1),.Our-avalability > div:nth-child(3) > div:nth-child(2){margin-left: 4%;background-color: rgb(241, 239, 233);padding-bottom: 50px;}
+@media(max-width:600px){.row4 > div:nth-child(2) > div:nth-child(2){font-size: 2em;font-weight: bolder;}}@media(max-width:992px) and (min-width:601px){.row4 > div:nth-child(2) > div:nth-child(2){font-size: 2em;font-weight: bolder;}}

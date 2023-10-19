@@ -23,10 +23,10 @@
     .hiddin{width: 15%;margin-right: 1.6%;}.hiddin a{text-decoration: none;opacity: 0.5;}.hiddin a:hover{opacity: 1;} 
     .overly01{background-color: rgb(104, 101, 101); position: absolute;top: 0;right: 0;width: 100%;height: 100%;}
     .hiddin01:hover   .overly01{display: none;}
-    .hover-to-show-card{position: relative;}
+    .hover-to-show-card{position: relative;padding: 40px; margin-left: 6%;margin-bottom: 30px;height: 200px;margin-right: 2%;}
     .overlay02{position: absolute;top: 0;right: 0;width: 100%;height: 100%;display: none;}
     .hover-to-show-card:hover .overlay02{display: block;}
-    .case-study-anchor{height: 40px;}
+    .case-study-anchor{height: 40px;width: 100%;text-align: center;}
     .case-study-anchor a:hover{border-bottom: 3px solid rgb(57, 96, 249);color: rgb(57, 96, 249);cursor: pointer;}
     .case-study-anchor a{margin-right: 4%;padding-left: 0;padding-right: 0;}
     .image-container{margin-right: 3%;width: 30.3%;margin-top: 36px;overflow: hidden;position: relative;}
@@ -46,6 +46,19 @@
     footer{margin-top: 70px;background-image: url('../Images/footer-background.webp');background-size: cover;background-position: center;padding: 2%;padding-top: 100px;padding-bottom: 50px;color: white;}
     footer a{text-decoration: none;line-height: 35px;color: rgb(157, 159, 160);}
     footer a:hover{color: white;}
+    .count-container{font-family:Arial, Helvetica, sans-serif;margin-left: 5%;}
+   @media(max-width: 600px){
+    .hiddin{font-size: smaller;}
+    .why-choose-us-col{width: 96%;}
+     }
+  @media(max-width: 992px) and (min-width:601px){
+    .hiddin{font-size: small;}
+    .why-choose-us-col{width: 45%;}
+     }
+
+
+    /*here media querry code is added*/
+   
     
 
     

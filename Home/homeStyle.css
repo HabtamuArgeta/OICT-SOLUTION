@@ -15,3 +15,12 @@
 .tech-index-device1 i{color: rgb(57, 96, 249);}.tech-index-device1:hover i{color: white;}
 .Our-avalability{width: 100%;padding-top: 140px;padding-bottom: 150px;background-image: url('../Images/OIP.jpeg');background-position: center;background-size: cover;opacity: 0.9;}
 .logo-of-client{width: 80px;height: 80px;border-radius: 50%;background-color: lightgray;}
+.Image-On-why-you-choose-us{margin-right: 6%;}
+/* code to define mesia querry*/
+@media(max-width: 600px){
+    .why-choose-us-col{width: 96%;margin-top: 20px;}.tech-index-device1{width: 28%;}
+    
+     }
+  @media(max-width: 992px) and (min-width:601px){
+    .why-choose-us-col{width: 45%;margin-top: 20px;}.Image-On-why-you-choose-us{margin-right: 0;}.Image-On-why-you-choose-us img{height: 300px;}.tech-index-device1{width: 28%;}
+     }
